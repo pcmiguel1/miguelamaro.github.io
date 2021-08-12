@@ -195,6 +195,10 @@ footer {
         p {
             margin: 0;
         }
+        
+        a {
+            text-decoration: none;
+        }
     }
 
     .secondary {
@@ -259,3 +263,22 @@ footer {
 .contact-form {
     padding: 0 15em;
 }
+
+
+@media only screen and (max-width: 770px) {
+    
+    nav {
+        justify-content: center;
+    }
+
+    .profile {
+        text-align: center;
+
+        .info {
+            margin-top: 2em;
+            margin-left: 0;
+        }
+
+    }
+
+  }

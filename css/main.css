@@ -203,6 +203,10 @@ footer .primary p {
   margin: 0;
 }
 
+footer .primary a {
+  text-decoration: none;
+}
+
 footer .secondary i {
   font-size: 2em;
   margin-left: .3em;
@@ -265,5 +269,20 @@ footer .secondary i:hover {
 
 .contact-form {
   padding: 0 15em;
+}
+
+@media only screen and (max-width: 770px) {
+  nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .profile {
+    text-align: center;
+  }
+  .profile .info {
+    margin-top: 2em;
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
