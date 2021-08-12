@@ -139,10 +139,10 @@ nav li a:hover {
 
 .work .cards .card .card-img-top {
   border-radius: .3em;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: -webkit-transform .9s;
+  transition: -webkit-transform .9s;
+  transition: transform .9s;
+  transition: transform .9s, -webkit-transform .9s;
 }
 
 .work .cards .card .card-img-top:hover {
@@ -215,11 +215,38 @@ footer .secondary i:hover {
 
 .get-in-touch-info {
   margin-top: 5em;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.get-in-touch-info h1 {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 3em;
+}
+
+.get-in-touch-info p {
+  font-size: 1.3em;
 }
 
 .contact-label {
   margin-top: 1.5em;
   font-weight: bold;
   color: var(--primary-color);
+}
+
+.btn-send {
+  margin-top: 3em;
+  background: var(--primary-color);
+  color: white;
+  border: 1px solid var(--primary-color);
+  border-radius: 5em;
+  padding: .5em 2.5em;
+  margin-right: 0.5em;
+  font-weight: bold;
+}
+
+.btn-send:hover {
+  opacity: .9;
 }
 /*# sourceMappingURL=main.css.map */

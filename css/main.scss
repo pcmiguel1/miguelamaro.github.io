@@ -128,7 +128,7 @@ nav {
 
             .card-img-top {
                 border-radius: .3em;
-                transition: transform .2s;
+                transition: transform .9s;
 
                 &:hover {
                     -ms-transform: scale(1.1);  /* IE 9 */
@@ -216,10 +216,38 @@ footer {
 
 .get-in-touch-info {
     margin-top: 5em;
+    text-align: center;
+    margin-bottom: 3em;
+
+    h1 {
+        font-weight: bold;
+        color: var(--primary-color);
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
 }
 
 .contact-label {
     margin-top: 1.5em;
     font-weight: bold;
     color: var(--primary-color);
+}
+
+.btn-send {
+        margin-top: 3em;
+        background: var(--primary-color);
+        color: white;
+        border: 1px solid var(--primary-color);
+        border-radius: 5em;
+        padding: .5em 2.5em;
+        margin-right: 0.5em;
+        font-weight: bold;
+
+        &:hover {
+            opacity: .9;
+        }
 }
