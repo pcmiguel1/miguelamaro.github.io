@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #007AF3;
+}
+
+body {
+  background: white;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  width: 100%;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: #0B101F;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  color: var(--primary-color);
+}
+
+.foto-img {
+  width: 250px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  margin: 0 10;
+  cursor: pointer;
+}
+
+.foto-img:hover {
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5em;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile .info {
+  margin-left: 5em;
+}
+
+.profile .info h1 {
+  font-size: 1.6em;
+}
+
+.profile .info h2 {
+  margin-top: 0.5em;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.profile .info p {
+  margin-top: 0.5em;
+  font-size: 1.3em;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 3em;
+}
+
+.buttons .btn-info {
+  text-decoration: none;
+  background: none;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5em;
+  padding: .5em .9em;
+  margin-right: 0.5em;
+}
+
+.buttons .btn-info:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.work {
+  border-top: 1px solid #d6d6d6;
+  margin-top: 8em;
+}
+
+.work .cards {
+  margin-top: 5em;
+}
+
+.work .cards .card {
+  border: none;
+  cursor: pointer;
+}
+
+.work .cards .card .card-img-top {
+  border-radius: .3em;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.work .cards .card .card-img-top:hover {
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.work .cards .card .card-body {
+  padding-left: 0;
+  margin-top: 1.5em;
+}
+
+.work .cards .card .card-body .card-title {
+  font-weight: bold;
+  font-size: 1.6em;
+  color: var(--primary-color);
+}
+
+.work .cards .card .card-body .card-title .links {
+  display: inline;
+  float: right;
+}
+
+.work .cards .card .card-body .card-title .links a {
+  margin-left: 0.5em;
+}
+
+.work .cards .card .card-body .card-title .links a i {
+  font-size: .9em;
+}
+
+.work .cards .card .card-body .tecnologies-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.work .cards .card .card-body .tecnologies-cards .tecnologie {
+  border: 1px solid #707070;
+  border-radius: 0.3em;
+  padding: .3em .6em;
+  margin-right: .5em;
+  margin-top: .5em;
+}
+
+footer {
+  margin-top: 5em;
+  padding-bottom: 3em;
+}
+
+footer .primary p {
+  margin: 0;
+}
+
+footer .secondary i {
+  font-size: 2em;
+  margin-left: .3em;
+  color: var(--bs-body-color);
+}
+
+footer .secondary i:hover {
+  color: var(--primary-color);
+}
+/*# sourceMappingURL=main.css.map */
