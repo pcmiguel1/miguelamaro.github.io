@@ -121,10 +121,15 @@ nav {
 
     .cards {
         margin-top: 5em;
+        display: flex;
+        flex-wrap: wrap;
 
         .card {
+            width: 39.6em;
             border: none;
             cursor: pointer;
+            margin-left: .9em;
+            margin-top: 1.3em;
 
             .card-img-top {
                 border-radius: .3em;
