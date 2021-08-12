@@ -218,6 +218,10 @@ footer {
     margin-top: 5em;
     text-align: center;
     margin-bottom: 3em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     h1 {
         font-weight: bold;
@@ -250,4 +254,8 @@ footer {
         &:hover {
             opacity: .9;
         }
+}
+
+.contact-form {
+    padding: 0 15em;
 }
