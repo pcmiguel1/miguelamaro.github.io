@@ -186,11 +186,12 @@ nav li a:hover {
 }
 
 .work .cards .card .card-body .tecnologies-cards .tecnologie {
-  border: 1px solid #707070;
+  border: 1px solid #A0AAB4;
   border-radius: 0.3em;
   padding: .3em .6em;
   margin-right: .5em;
   margin-top: .5em;
+  color: #A0AAB4;
 }
 
 footer {
@@ -209,6 +210,16 @@ footer .secondary i {
 }
 
 footer .secondary i:hover {
+  color: var(--primary-color);
+}
+
+.get-in-touch-info {
+  margin-top: 5em;
+}
+
+.contact-label {
+  margin-top: 1.5em;
+  font-weight: bold;
   color: var(--primary-color);
 }
 /*# sourceMappingURL=main.css.map */
