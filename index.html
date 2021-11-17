@@ -5,268 +5,221 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miguel Amaro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="js/email.js"></script>
-    <!-- icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="navbar">
-        <div class="container">
-
-            <nav>
-                <ul class="nav">
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#work">WORK</a></li>
-                    <li><a href="#footer">CONTACT</a></li>
-                </ul>
-            </nav>
-
-        </div>
-    </div>
-
-    <section class="hero">
-        <div class="container">
-           
-            <div id="about" class="profile">
-
-                <div class="row">
-
-                    <div class="col-md-3 col-sm-12">
-                        <img class="foto-img" src="images/me.svg" alt="Foto of me">
+    <section id="about-me">
+        <nav>
+            <div class="personal__logo">Miguel Amaro</div>
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                    <a href="#languages" class="nav__link--anchor link__hover-effect link__hover-effect--black">Languages</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
+                </li>
+                <li class="nav__link">
+                    <a href="mailto:miguelpiresamaro@gmail.com" class="nav__link--anchor nav__link--anchor-primary">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="flex flex-1">
+            <div class="about-me__info row">
+                <div class="about-me__info--container">
+                    <figure class="about-me__picture--mask">
+                        <img src="./assets/me.jpg" class="about-me__picture" alt="Picture of Me!">
+                    </figure>
+                    <h1 class="about-me__info--title">
+                        Hey! I'm <span class="text--purple">Miguel Amaro</span>&nbsp;<span class="wave">👋</span>
+                    </h1>
+                    <p class="about-me__info--para">
+                        I'm a <strong class="text--purple">Android & Web Developer</strong> with a strong passion for building responsive, optimized and efficient applications. Currently available for freelance and other projects opportunities.
+                    </p>
+                    <div class="about-me__links">
+                        <a href="https://www.linkedin.com/in/miguel-amaro/" target="_blank" class="about-me__link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/pcmiguel1" target="_blank" class="about-me__link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:miguelpiresamaro@gmai.com" target="_blank" class="about-me__link">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                        <a href="./assets/CV_MiguelAmaro.pdf" target="_blank" class="about-me__link">
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
                     </div>
-
-                    <div class="col-md-9 col-sm-12">
-                        <div class="info">
-                            <h1>Hello! I'm <span class="name">Miguel Amaro</span></h1>
-                            <h2>Android & Web Developer</h2>
-                            <p>I design and develop responsive, optimized and efficient websites and aplications. Currently available for freelance and other projects opportunities.</p>
-                            <div class="buttons">
-                                <a class="btn-info" href="CV_MiguelAmaro.pdf" download>My résumé</a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
                 
             </div>
-
         </div>
-
     </section>
 
-    <section id="work" class="work">
+    <section id="languages">
         <div class="container">
-            
-            <div class="cards">
-
-                <div class="card">
-                    <img class="card-img-top" src="images/dogwalkers.svg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Dog Walkers
-                            <div class="links">
-                                <a href="#"><i class="fab fa-github"></i></a>
-                            </div>
-                        </h5>
-                        <p class="card-text">
-                            A Web based and Mobile application to hire people who want to walk dogs and manage their own business.
-                        </p>
-                    
-                        <div class="tecnologies-cards">
-                            <span class="tecnologie">Java</span>
-                            <span class="tecnologie">HTML</span>
-                            <span class="tecnologie">CSS</span>
-                            <span class="tecnologie">JavaScript</span>
-                            <span class="tecnologie">Node.js</span>
-                            <span class="tecnologie">Rest API</span>
-                            <span class="tecnologie">Bootstrap</span>
-                            <span class="tecnologie">MYSQL</span>
-                        </div>
-
+            <div class="row">
+                <h1 class="section__title">This is my <span class="text--purple">tecnology stack</span></h1>
+                <div class="language__list">
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="" class="language__img">
+                        </figure>
+                        <span class="language__name">HTML</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="" class="language__img">
+                        </figure>
+                        <span class="language__name">CSS</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="" class="language__img">
+                        </figure>
+                        <span class="language__name">JavaScript</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="/assets/sass.png" alt="" class="language__img">
+                        </figure>
+                        <span class="language__name">SASS</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="/assets/java.png" alt="" class="language__img">
+                        </figure>
+                        <span class="language__name">Java</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="/assets/kotlin.png" alt="" class="language__img">
+                        </figure>
+                        <span class="language__name">Kotlin</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="/assets/nodejs.png" alt="" class="language__img">
+                        </figure>
+                        <span class="language__name">Node.js</span>
+                    </div>
+                    <div class="language">
+                        <figure class="language__img--wrapper">
+                            <img src="assets/bootstrap.png" alt="" class="language__img">
+                        </figure>
+                        <span class="language__name">Bootstrap</span>
                     </div>
                 </div>
-
-                <div class="card">
-                    <img class="card-img-top" src="images/smartstop.svg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            SmartStop
-                            <div class="links">
-                                <a href="#"><i class="fab fa-github"></i></a>
-                            </div>
-                        </h5>
-                        <p class="card-text">
-                            Integrated solution (Website, Mobile and API's) that allows the management and reservation of parking spaces.
-                        </p>
-                    
-                        <div class="tecnologies-cards">
-                            <span class="tecnologie">Java</span>
-                            <span class="tecnologie">HTML</span>
-                            <span class="tecnologie">CSS</span>
-                            <span class="tecnologie">JavaScript</span>
-                            <span class="tecnologie">Node.js</span>
-                            <span class="tecnologie">Rest API</span>
-                            <span class="tecnologie">Bootstrap</span>
-                            <span class="tecnologie">MYSQL</span>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card-img-top" src="images/covidtracker.svg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            CovidTracker
-                            <div class="links">
-                                <a href="#"><i class="fab fa-github"></i></a>
-                            </div>
-                        </h5>
-                        <p class="card-text">
-                            Mobile Application that the main objective is to help managing the pandemic in each country.
-                        </p>
-                    
-                        <div class="tecnologies-cards">
-                            <span class="tecnologie">Java</span>
-                            <span class="tecnologie">Node.js</span>
-                            <span class="tecnologie">Rest API</span>
-                            <span class="tecnologie">MYSQL</span>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card-img-top" src="images/anime+.svg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Anime+
-                            <div class="links">
-                                <a href="#"><i class="fab fa-github"></i></a>
-                            </div>
-                        </h5>
-                        <p class="card-text">
-                            Find new and interesting anime by browing your favorite categories. Discuss episodes you've watched and keep track of what you've seen.
-                        </p>
-                    
-                        <div class="tecnologies-cards">
-                            <span class="tecnologie">Java</span>
-                            <span class="tecnologie">Node.js</span>
-                            <span class="tecnologie">Rest API</span>
-                            <span class="tecnologie">MYSQL</span>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card-img-top" src="images/fastshopping.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            FastShopping
-                            <div class="links">
-                                <a href="#"><i class="fab fa-github"></i></a>
-                            </div>
-                        </h5>
-                        <p class="card-text">
-                            This Project has the functionality to help searching for the products according to its characteristics and price, in the stores/markets that are made available by the application. 
-                        </p>
-                    
-                        <div class="tecnologies-cards">
-                            <span class="tecnologie">Java</span>
-                            <span class="tecnologie">JavaFX</span>
-                            <span class="tecnologie">MYSQL</span>
-                            <span class="tecnologie">Eclipse</span>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card-img-top" src="images/todoapp.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            TODOApp
-                            <div class="links">
-                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                            </div>
-                        </h5>
-                        <p class="card-text">
-                            ToDo is a classic task application, in which the user can write all the things he wants to accomplish a certain task. This application will help to keep your days more organized, with all the tasks you must do throughout the day.
-                        </p>
-                    
-                        <div class="tecnologies-cards">
-                            <span class="tecnologie">HTML</span>
-                            <span class="tecnologie">CSS</span>
-                            <span class="tecnologie">JavaScript</span>
-                            <span class="tecnologie">PHP</span>
-                            <span class="tecnologie">MYSQL</span>
-                            <span class="tecnologie">BootStrap</span>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card-img-top" src="images/sportplus.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            SportPlus
-                            <div class="links">
-                                <a href="https://sportsplus-app.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                            </div>
-                        </h5>
-                        <p class="card-text">
-                            Project with a large emphasis on Web Development. The objective was to connect people who share a passion for the same sport.
-                        </p>
-                    
-                        <div class="tecnologies-cards">
-                            <span class="tecnologie">Java</span>
-                            <span class="tecnologie">HTML</span>
-                            <span class="tecnologie">CSS</span>
-                            <span class="tecnologie">JavaScript</span>
-                            <span class="tecnologie">Node.js</span>
-                            <span class="tecnologie">Rest API</span>
-                            <span class="tecnologie">Bootstrap</span>
-                            <span class="tecnologie">MYSQL</span>
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
-
         </div>
     </section>
 
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">Here are some of my <span class="text--purple">projects</span></h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/dogwalkers.svg" class="project__img" alt="project img">
+                            <div class="project__description">
+                                <h3 class="project__description--title">DogWalkers</h3>
+                                <h4 class="project__description--sub-title">
+                                    Java, HTML, CSS, JavaScript, Node.js, Rest API, Bootstrap, MySQL
+                                </h4>
+                                <p class="project__description--para">
+                                    A web based and mobile application to hire people 
+                                    who want to walk dogs and manage their own 
+                                    business.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/pcmiguel1/dogwalkers-app" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
-    <section></section>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/smartstop.svg" class="project__img" alt="project img">
+                            <div class="project__description">
+                                <h3 class="project__description--title">SmartStop</h3>
+                                <h4 class="project__description--sub-title">
+                                    Java, HTML, CSS, JavaScript, Node.js, Rest API, Bootstrap, MySQL
+                                </h4>
+                                <p class="project__description--para">
+                                    Integrated solution (website, mobile application and 
+                                    API’s) that allows the management and reservation 
+                                    of parking spaces.
 
-    <footer id="footer">
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/pcmiguel1/smartstop-mobile" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/loopit.png" class="project__img" alt="project img">
+                            <div class="project__description">
+                                <h3 class="project__description--title">SportPlus</h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript, Node.js, Rest API, Bootstrap, MySQL
+                                </h4>
+                                <p class="project__description--para">
+                                    Project with a large emphasis on web development. 
+                                    The objective was to connect people who share a 
+                                    passion for the same sport. 
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
-            <div class="primary">
-                <p>Build with <i class="fas fa-heart"></i> Miguel Amaro &copy; 2021</p>
-                <a href="mailto: miguelpiresamaro@gmail.com">miguelpiresamaro@gmail.com</a>
+                    
+                </ul>
             </div>
-    
-            <div class="secondary">
-                <a href="https://github.com/pcmiguel1"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/miguel-amaro/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/miguel.amaro19/"><i class="fab fa-instagram"></i></a>
-            </div>
-
         </div>
+    </section>
 
+    <footer>
+        <div class="row footer__row">
+            <a href="#" class="footer__anchor">
+                <figure class="footer__logo">
+                    <img src="./assets/logo.svg" class="footer__logo--img" alt="">
+                </figure>
+                <span class="footer__logo--popper">
+                    Top
+                    <i class="fas fa-arrow-up"></i>
+                </span>
+            </a>
+            <div class="footer__social--list">
+                <a href="https://github.com/pcmiguel1" class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/miguel-amaro/" class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">Linkedin</a>
+                <a href="mailto:miguelpiresamaro@gmai.com" class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">Email</a>
+                <a href="./assets/CV_MiguelAmaro.pdf" class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank" download>Resume</a>
+            </div>
+            <div class="footer__copyright">Copyright © 2021 Miguel Amaro</div>
+        </div>
     </footer>
-
 </body>
 </html>
